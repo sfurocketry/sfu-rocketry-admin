@@ -1,14 +1,16 @@
 // Add portrait files under public/images/People/Executives or /Alumni,
 export const executives = [
-    { name: "Nathaniel Butler", description: "President", date: "", image: "" },
-    { name: "Mathew Debuen", description: "", date: "", image: "" },
-    { name: "Adam", description: "", date: "", image: "" },
-    { name: "Guneet Malhotra", description: "", date: "", image: "" },
+    { name: "Nathaniel Butler", description: "President", date: "2025", image: "" },
+    { name: "Mathew Debuen", description: "Propultion Lead", date: "2025", image: "" },
+    { name: "Adam Nguyen", description: "Mechanical Lead", date: "2025", image: "" },
+    { name: "Guneet Malhotra", description: "Avionics Lead", date: "2025", image: "" },
 ];
 
 // Keep dated entries newest-first by the first year in date; undated entries go last.
 export const pastPresidents = [
-    { name: "Sebastian Nieto", description: "President & CFO", date: "2026", image: "Sebastian+Nieto.webp" },
+    { name: "Sebastian Nieto", description: "President & CFO", date: "2025-2026", image: "Sebastian+Nieto.webp" },
+    { name: "Faizan Malik", description: "President", date: "2025", image: "Faizan+Malik.jpg"},
+    { name: "Bradley Schellenberg", description: "CEO & Various Roles", date: "2023-2025", image: "Bradley+Schellenberg.webp" },
     { name: "Levi Magel", description: "President", date: "2022", image: "Levi+Magel.webp" },
     { name: "Elias Bircher", description: "President", date: "2019-2022", image: "Elias+Bircher.webp" },
     { name: "Kevin Burville", description: "Founding President", date: "2018", image: "Kevin+Burville.webp" },
@@ -18,7 +20,7 @@ export const pastPresidents = [
 export const alumni = [
     { name: "Sebastian Nieto", description: "President & CFO", date: "2026", image: "Sebastian+Nieto.webp" },
     
-    { name: "Bradley Schellenberg", description: "CEO & Various Roles", date: "2021-2024", image: "Bradley+Schellenberg.webp" },
+    { name: "Bradley Schellenberg", description: "CEO & Various Roles", date: "2021-2025", image: "Bradley+Schellenberg.webp" },
     { name: "Devin Armstrong", description: "Director of Hardware Systems", date: "2022-2024", image: "Devin+Armstrong.webp" },
     { name: "Gavin Theyes", description: "ECS Software Lead", date: "2022-2024", image: "Gavin+Theyes.webp" },
     { name: "Ishaan Aggarwal", description: "Propulsion Director", date: "2023-2024", image: "Ishaan-Aggarwal.webp" },
@@ -40,9 +42,11 @@ export const alumni = [
 
     { name: "Kevin Burville", description: "Founding President", date: "2018", image: "Kevin+Burville.webp" },
 
-    { name: "Andrei Tent", description: "", date: "", image: "Andrei+Tent.webp" },
-    { name: "Daler Kuishinov", description: "", date: "", image: "Daler+Kuishinov.webp" },
-    { name: "Jan Swanson", description: "Cryogenic Sensors Lead", date: "", image: "Jan+Swanson.webp" },
-    { name: "Joel Lerner", description: "", date: "", image: "Joel+Lerner.webp" },
-    { name: "Xander Denis", description: "Director of Mechanical Engineering", date: "", image: "Xander+Denis.webp" },
+    { name: "Andrei Tent", description: "", date: "2023-2024", image: "Andrei+Tent.webp" },
+    { name: "Daler Kuishinov", description: "", date: "2023-2024", image: "Daler+Kuishinov.webp" },
+    { name: "Jan Swanson", description: "Cryogenic Sensors Lead", date: "2023-2024", image: "Jan+Swanson.webp" },
+    { name: "Joel Lerner", description: "", date: "2023-2024", image: "Joel+Lerner.webp" },
+    { name: "Xander Denis", description: "Director of Mechanical Engineering", date: "2021-2025", image: "Xander+Denis.webp" },
+
+    { name: "Faizan Malik", description: "President & Chief Safety Officer", date: "2022-2025", image: "Faizan+Malik.jpg"},
 ];
