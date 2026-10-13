@@ -9,6 +9,12 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  VITE_GOOGLE_CALENDAR_ID: ${{ secrets.VITE_GOOGLE_CALENDAR_ID }} 
+  VITE_GOOGLE_CALENDAR_API_KEY: ${{ secrets.VITE_GOOGLE_CALENDAR_API_KEY }} 
+  VITE_FORMSPREE_PARTNER_ENDPOINT: ${{ secrets.VITE_FORMSPREE_PARTNER_ENDPOINT }} 
+  VITE_FORMSPREE_CONTACT_ENDPOINT: ${{ secrets.VITE_FORMSPREE_CONTACT_ENDPOINT }} 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,13 +28,6 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
-env:
-  VITE_GOOGLE_CALENDAR_ID: ${{ secrets.VITE_GOOGLE_CALENDAR_ID }} 
-  VITE_GOOGLE_CALENDAR_API_KEY: ${{ secrets.VITE_GOOGLE_CALENDAR_API_KEY }} 
-  VITE_FORMSPREE_PARTNER_ENDPOINT: ${{ secrets.VITE_FORMSPREE_PARTNER_ENDPOINT }} 
-  VITE_FORMSPREE_CONTACT_ENDPOINT: ${{ secrets.VITE_FORMSPREE_CONTACT_ENDPOINT }} 
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
