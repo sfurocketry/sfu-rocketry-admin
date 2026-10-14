@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import ProjectSummary from "../components/ProjectSummary";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -24,8 +25,7 @@ export default function ProjectDetail() {
           <span key={c} className="tag">{c}</span>
         ))}
       </div>
-      <p>{project.summary}</p>
-      {/* TODO: add the full write-up for this project here */}
+      <ProjectSummary summary={project.summary} />
     </section>
   );
 }

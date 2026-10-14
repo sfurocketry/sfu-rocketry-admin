@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProjectSummary from "./ProjectSummary";
 
 export default function ProjectCard({ project }) {
   return (
@@ -11,7 +12,7 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
         <h3>{project.title}</h3>
-        <p>{project.summary}</p>
+        <ProjectSummary summary={project.summary} compact />
         <Link to={`/projects/${project.slug}`}>Read more →</Link>
       </div>
     </article>
