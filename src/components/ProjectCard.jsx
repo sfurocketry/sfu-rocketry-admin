@@ -10,6 +10,9 @@ export default function ProjectCard({ project }) {
           {project.categories.map((c) => (
             <span key={c} className="tag">{c}</span>
           ))}
+          {project.status === "completed" && (
+            <span className="tag project-status-tag">Completed</span>
+          )}
         </div>
         <h3>{project.title}</h3>
         <ProjectSummary summary={project.summary} compact />

@@ -4,6 +4,7 @@
 export const projects = [
   {
     slug: "lre-gen4",
+    status: "ongoing",
     title: "LRE GEN4 | Experimental Cooling",
     categories: ["Propulsion"],
     summary: `
@@ -13,10 +14,12 @@ export const projects = [
 
       As the largest engine we've built so far, GEN4 also helps us gain experience with new design challenges — higher flow rates, larger hardware, and more demanding structural loads — all of which feed into the long-term goal of developing a regeneratively cooled engine.
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/lre-gen4.jpg`,
   },
   {
     slug: "lre-gen3",
+    status: "completed",
     title: "LRE GEN3 | Advanced Telemetry",
     categories: ["Propulsion"],
     summary: `
@@ -28,10 +31,12 @@ export const projects = [
 
       GEN3 is planned to be SFU Rocketry’s first public demonstration engine. By showcasing a full static hotfire in front of a live audience of students, professionals, municipal/provincial government officials, and family/friends, our goal is to raise awareness about Rocket Propulsion on the west coast of our country - highlighting Canadian talent in aerospace and inspiring the next generation of engineers.
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/lre-gen3.jpg`,
   },
   {
     slug: "silencer",
+    status: "ongoing",
     title: "Engine Acoustics Silencer",
     categories: ["Mechanical", "Propulsion"],
     summary:`
@@ -39,10 +44,12 @@ export const projects = [
 
       The design centers around a large cylindrical enclosure equipped with high-flow water nozzles that spray directly into the engine plume. The water rapidly cools and disrupts the supersonic exhaust jet, breaking up shock structures and dramatically reducing broadband noise. The cylindrical housing helps further contain and dampen the remaining sound energy.
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/silencer.jpg`,
   },
   {
     slug: "etc",
+    status: "ongoing",
     title: "Engine Test Cell",
     categories: ["Mechanical", "Propulsion"],
     summary:`
@@ -54,10 +61,12 @@ export const projects = [
 
       With built-in diagnostics and instrumentation, it provides live feedback on pressure, temperature, thrust, and valve timing, enabling detailed post-test analysis and iterative improvements across engine programs. The system is also being designed with safety and repeatability in mind, incorporating standard isolation protocols, remote control operation, and compatibility with high-thrust load cells and flame trench systems. 
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/etc.jpg`,
   },
   {
     slug: "lace-1",
+    status: "ongoing",
     title: "LACE-1 | ISG Propulsion R&D",
     categories: ["Propulsion", "Innovative Solutions Group"],
     summary:`
@@ -67,42 +76,51 @@ export const projects = [
 
       LACE represents a major step toward high-performance, flight-ready propulsion systems — and serves as a proving ground for advanced cooling designs that will carry over into future mission-class engines.
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/lace-1.jpg`,
   },
   {
     slug: "ablatives",
+    status: "ongoing",
     title: "Ablatives | ISG Materials R&D",
     categories: ["Mechanical", "Innovative Solutions Group"],
     summary:`
       SFU Rocketry is researching and developing custom thermally insulative and ablative materials to use in heat shielding and the construct propulsion system parts. Our goal is to lower the manufacturing cost and complexity of actively cooled engines by developing engine designs using novel ablative materials. 
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/ablatives.jpg`,
   },
   {
     slug: "power-systems",
+    status: "ongoing",
     title: "Power, Battery, and BMS Systems",
     categories: ["Hardware"],
     summary:`
       All of SFU Rocketry's hardware projects require reliable power systems that can handle special requirements related to weight, high-power delivery, modularity, temperature, and weather resistance. We address these requirements by designing and building custom batteries, battery management PCBs, power converters, and the accompanying validation equipment such as dynamic loads and analyzers. 
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/power-systems.jpg`,
   },
   {
     slug: "cryo",
+    status: "ongoing",
     title: "CRYO | ISG Sensors R&D",
     categories: ["Mechanical", "Hardware", "Software", "Innovative Solutions Group"],
     summary:`
       All SFU Rocketry engines have used liquid oxygen (LOX), which is transported from a large supply tank into the Test Stand tanks before firing. LOX is a pure oxidizer, and a cryogenic near absolute zero, which makes it challenging and high-risk to work with. In order to monitor the status of the tanks when filling and while firing, our Cryogenic Systems Module team is developing a LOX-safe capacitance sensor and processing module to ensure our LOX tanks are filled and operated correctly. 
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/cryo.jpg`,
   },
   {
     slug: "venturi",
+    status: "ongoing",
     title: "Venturi Flowmeters | ISG Sensors R&D",
     categories: ["Propulsion", "Mechanical", "Innovative Solutions Group"],
     summary:`
       SFU Rocketry is developing in-house designed Venturi Flowmeters, a breakthrough in cost-effective precision fluid measurement to support propulsion system feedback and control. Tailored specifically for rocketry applications, these flowmeters exemplify our dedication to self-reliance and technical advancement. Their innovative designs ensure accurate and reliable measurements of fluid flow, crucial for optimizing engine performance, while costing less than 10% of equivalent commercial options. Compact and efficient, the Venturi Flowmeters are pivotal tools in our mission to build larger and more powerful engines capable of reaching the upper atmosphere. 
     `.trim(),
+    image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/venturi.jpg`,
   },
 ];
