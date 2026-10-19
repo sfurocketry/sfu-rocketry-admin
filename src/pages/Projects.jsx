@@ -18,7 +18,7 @@ export default function Projects() {
           <h1>Projects</h1>
           {selectedCategory && (
             <p className="projects-filter-label">
-              Showing projects for <strong>{selectedCategory}</strong>
+              Showing projects for the <strong>{selectedCategory}</strong> subteam
             </p>
           )}
         </div>
@@ -26,7 +26,7 @@ export default function Projects() {
       <section className="page projects-content">
         {filteredProjects.length === 0 ? (
           <p className="projects-empty-state">
-            No projects are tagged with this subteam.
+            No projects are tagged for this subteam.
           </p>
         ) : (
           <>

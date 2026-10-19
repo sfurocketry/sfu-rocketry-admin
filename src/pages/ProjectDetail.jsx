@@ -19,7 +19,7 @@ export default function ProjectDetail() {
     <section className="page project-detail">
       <Link to="/projects">← Back to all projects</Link>
       <div className="project-subteams">
-        <span className="project-subteams-label">Subteam(s):</span>
+        <span className="project-subteams-label">Subteams:</span>
         <div className="categories">
           {project.categories.map((category) => (
             <Link

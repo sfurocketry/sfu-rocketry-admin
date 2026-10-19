@@ -1,4 +1,6 @@
-import { alumni, executives, pastPresidents } from "../data/people";
+import { Link } from "react-router-dom";
+import { alumni, executives, pastMembers, pastPresidents } from "../data/people";
+import { projects } from "../data/projects";
 
 const introImageStyle = {
   position: "absolute",
@@ -25,6 +27,15 @@ function sortPeopleByDate(people, useFirstYear = false) {
     (first, second) =>
       getPeopleSortYear(second.date, useFirstYear) - getPeopleSortYear(first.date, useFirstYear)
   );
+}
+
+function getMembershipDuration(date) {
+  const years = String(date || "").match(/\d{4}/g)?.map(Number) ?? [];
+  if (years.length === 0) return null;
+
+  const startYear = years[0];
+  const endYear = years[years.length - 1];
+  return Math.max(1, endYear - startYear + 1);
 }
 
 function PeopleGallery({ people, imageFolder, emptyMessage }) {
@@ -161,6 +172,74 @@ export default function About() {
           imageFolder="Alumni"
           emptyMessage="Alumni profiles will appear here. Add each person in the people data list."
         />
+      </section>
+
+      <section className="about-people about-past-members">
+        <div className="about-section-heading">
+          <p className="eyebrow">Thank You</p>
+          <h2>Past Members</h2>
+        </div>
+        {pastMembers.length > 0 ? (
+          <ul className="past-members-list">
+            {sortPeopleByDate(pastMembers, true).map((member) => {
+              const duration = getMembershipDuration(member.date);
+
+              return (
+                <li className="past-member" key={member.name}>
+                  <span className="past-member-dates">{member.date || "—"}</span>
+                  <span className="past-member-name">{member.name}</span>
+                  <span className="past-member-links">
+                    {member.categories.length > 0 && (
+                      <span className="past-member-categories">
+                        <span className="past-member-link-label">Subteams: </span>
+                        {member.categories.map((category, index) => (
+                          <span key={category}>
+                            {index > 0 && ", "}
+                            <Link to={`/projects?category=${encodeURIComponent(category)}`}>
+                              {category}
+                            </Link>
+                          </span>
+                        ))}
+                      </span>
+                    )}
+                    {member.projects.length > 0 && (
+                      <span className="past-member-projects">
+                        <span className="past-member-link-label">Projects: </span>
+                        {member.projects.map((projectName, index) => {
+                          const project = projects.find(
+                            (candidate) =>
+                              candidate.title.toLowerCase() === projectName.toLowerCase() ||
+                              candidate.slug.toLowerCase() === projectName.toLowerCase()
+                          );
+
+                          return (
+                            <span key={projectName}>
+                              {index > 0 && ", "}
+                              {project ? (
+                                <Link to={`/projects/${project.slug}`}>{projectName}</Link>
+                              ) : (
+                                projectName
+                              )}
+                            </span>
+                          );
+                        })}
+                      </span>
+                    )}
+                  </span>
+                  {duration !== null && (
+                    <span className="past-member-duration">
+                      {duration} {duration === 1 ? "year" : "years"}
+                    </span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <p className="people-empty-state">
+            Past member names will appear here. Add them in the people data list.
+          </p>
+        )}
       </section>
     </div>
   );
