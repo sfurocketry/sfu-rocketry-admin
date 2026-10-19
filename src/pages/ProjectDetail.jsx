@@ -22,7 +22,13 @@ export default function ProjectDetail() {
         <span className="project-subteams-label">Subteam(s):</span>
         <div className="categories">
           {project.categories.map((category) => (
-            <span key={category} className="tag">{category}</span>
+            <Link
+              key={category}
+              to={`/projects?category=${encodeURIComponent(category)}`}
+              className="tag category-link"
+            >
+              {category}
+            </Link>
           ))}
         </div>
       </div>

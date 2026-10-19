@@ -8,7 +8,13 @@ export default function ProjectCard({ project }) {
       <div className="project-card-body">
         <div className="categories">
           {project.categories.map((c) => (
-            <span key={c} className="tag">{c}</span>
+            <Link
+              key={c}
+              to={`/projects?category=${encodeURIComponent(c)}`}
+              className="tag category-link"
+            >
+              {c}
+            </Link>
           ))}
           {project.status === "completed" && (
             <span className="tag project-status-tag">Completed</span>

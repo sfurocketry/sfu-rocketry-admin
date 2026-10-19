@@ -277,6 +277,11 @@ section.page { padding-top: 9rem; }
   color: var(--muted);
   font-size: 0.9rem;
 }
+.category-link:hover,
+.category-link:focus-visible {
+  border-color: var(--accent2);
+  color: var(--accent2);
+}
 .projects-page { background: var(--bg); }
 .projects-hero {
   min-height: min(48vw, 560px);
@@ -288,6 +293,18 @@ section.page { padding-top: 9rem; }
 .projects-hero-content { padding: 9rem 2rem 6rem; }
 .projects-hero h1 { font-size: clamp(4rem, 9vw, 8rem); line-height: 0.9; font-weight: 400; margin: 0; }
 .projects-content { padding-top: 3rem !important; }
+.projects-filter-label {
+  margin: 1rem 0 0;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #ffffff;
+}
+.projects-filter-reset { margin: 2rem 0 0; }
+.projects-filter-reset a {
+  color: var(--accent2);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.projects-empty-state { color: var(--muted); }
 .project-group h2 {
   margin: 0 0 1.5rem;
   font-size: clamp(2rem, 4vw, 3rem);
