@@ -31,7 +31,7 @@ export default function Projects() {
         ) : (
           <>
             {ongoingProjects.length > 0 && (
-              <section className="project-group" aria-labelledby="ongoing-projects-heading">
+              <section className="project-group project-card-group" aria-labelledby="ongoing-projects-heading">
                 <h2 id="ongoing-projects-heading">Ongoing Projects</h2>
                 <div className="project-grid">
                   {ongoingProjects.map((project) => (
@@ -43,7 +43,7 @@ export default function Projects() {
             {completedProjects.length > 0 && (
               <>
                 {ongoingProjects.length > 0 && <hr className="project-section-separator" />}
-                <section className="project-group completed-project-group" aria-labelledby="completed-projects-heading">
+                <section className="project-group project-card-group completed-project-group" aria-labelledby="completed-projects-heading">
                   <h2 id="completed-projects-heading">Completed Projects</h2>
                   <div className="project-grid">
                     {completedProjects.map((project) => (

@@ -50,10 +50,3 @@ export const alumni = [
 
     { name: "Faizan Malik", description: "President & Chief Safety Officer", date: "2022-2025", image: "Faizan+Malik.jpg"},
 ];
-
-export const pastMembers = [
-    { name: "Past Member1", date: "2022-2025", categories: ["Propulsion", "Mechanical"], projects: ["LRE GEN4 | Experimental Cooling", "Engine Acoustics Silencer"], image: "Faizan+Malik.jpg" },
-    { name: "Past Member2", date: "2024-2025", categories: ["Mechanical"], projects: ["LRE GEN4 | Experimental Cooling", "Engine Acoustics Silencer"], image: "Faizan+Malik.jpg" },
-    { name: "Past Member3", date: "2026", categories: ["Innovative Solutions Group"], projects: ["LRE GEN4 | Experimental Cooling", "Engine Acoustics Silencer"], image: "Faizan+Malik.jpg" },
-    { name: "Past Member4", date: "2020-2021", categories: ["Propulsion"], projects: ["LRE GEN4 | Experimental Cooling", "Engine Acoustics Silencer"], image: "Faizan+Malik.jpg" },
-];

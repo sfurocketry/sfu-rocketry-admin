@@ -7,6 +7,7 @@ export const projects = [
     status: "ongoing",
     title: "LRE GEN4 | Experimental Cooling",
     categories: ["Propulsion"],
+    cardDescription: "",
     summary: `
       **LRE GEN4 is SFU Rocketry’s next step into a higher thrust class** — a 10 kN liquid bipropellant engine designed to evaluate non-traditional cooling methods. The goal is to explore simpler alternatives to regenerative cooling while still handling significantly higher thermal loads than previous engines.
 
@@ -22,6 +23,7 @@ export const projects = [
     status: "completed",
     title: "LRE GEN3 | Advanced Telemetry",
     categories: ["Propulsion"],
+    cardDescription: "",
     summary: `
       **SFU Rocketry is developing our Liquid Rocket Engine (LRE) GEN3 propulsion system**: a 3 kN, heatsink-cooled engine focused on validating proprietary seal technology designed in-house by SFU Rocketry.
 
@@ -39,6 +41,7 @@ export const projects = [
     status: "ongoing",
     title: "Engine Acoustics Silencer",
     categories: ["Mechanical", "Propulsion"],
+    cardDescription: "",
     summary:`
       SFU Rocketry is developing the **Engine Acoustics Silencer** — a transportable water-deluge-based system designed to dramatically reduce the sound generated during rocket engine testing. Rocket engines can exceed 180 dB during firing, producing dangerous and disruptive levels of acoustic energy. This system allows us to safely operate high-thrust engines in locations that would otherwise be inaccessible due to noise constraints.
 
@@ -52,6 +55,7 @@ export const projects = [
     status: "ongoing",
     title: "Engine Test Cell",
     categories: ["Mechanical", "Propulsion"],
+    cardDescription: "",
     summary:`
       **SFU Rocketry is building a new permanent engine test system - the Engine Test Cell (ETC)**. Designed around a reinforced 20-foot shipping container, ETC integrates all key systems required for static fire testing: high-capacity propellant tanks, nitrogen pressurization, advanced instrumentation, structural engine mounting, remote actuation hardware, and real-time data acquisition.
 
@@ -69,6 +73,7 @@ export const projects = [
     status: "ongoing",
     title: "LACE-1 | ISG Propulsion R&D",
     categories: ["Propulsion", "Innovative Solutions Group"],
+    cardDescription: "",
     summary:`
       SFU Rocketry is developing LACE — **the Laminated Active Cooling Engine** — a new approach to regenerative cooling built around stackable, CNC-cut plates. By slicing the engine into cross-sectional layers of varying thickness, we can design internal cooling channels directly into each plate. These plates are then assembled, bonded (welded), and finish-machined into a complete thrust chamber with internal flow paths that would be impossible to produce using conventional subtractive methods.
 
@@ -84,6 +89,7 @@ export const projects = [
     status: "ongoing",
     title: "Ablatives | ISG Materials R&D",
     categories: ["Mechanical", "Innovative Solutions Group"],
+    cardDescription: "",
     summary:`
       SFU Rocketry is researching and developing custom thermally insulative and ablative materials to use in heat shielding and the construct propulsion system parts. Our goal is to lower the manufacturing cost and complexity of actively cooled engines by developing engine designs using novel ablative materials. 
     `.trim(),
@@ -95,6 +101,7 @@ export const projects = [
     status: "ongoing",
     title: "Power, Battery, and BMS Systems",
     categories: ["Hardware"],
+    cardDescription: "",
     summary:`
       All of SFU Rocketry's hardware projects require reliable power systems that can handle special requirements related to weight, high-power delivery, modularity, temperature, and weather resistance. We address these requirements by designing and building custom batteries, battery management PCBs, power converters, and the accompanying validation equipment such as dynamic loads and analyzers. 
     `.trim(),
@@ -106,6 +113,7 @@ export const projects = [
     status: "ongoing",
     title: "CRYO | ISG Sensors R&D",
     categories: ["Mechanical", "Hardware", "Software", "Innovative Solutions Group"],
+    cardDescription: "",
     summary:`
       All SFU Rocketry engines have used liquid oxygen (LOX), which is transported from a large supply tank into the Test Stand tanks before firing. LOX is a pure oxidizer, and a cryogenic near absolute zero, which makes it challenging and high-risk to work with. In order to monitor the status of the tanks when filling and while firing, our Cryogenic Systems Module team is developing a LOX-safe capacitance sensor and processing module to ensure our LOX tanks are filled and operated correctly. 
     `.trim(),
@@ -117,6 +125,7 @@ export const projects = [
     status: "ongoing",
     title: "Venturi Flowmeters | ISG Sensors R&D",
     categories: ["Propulsion", "Mechanical", "Innovative Solutions Group"],
+    cardDescription: "",
     summary:`
       SFU Rocketry is developing in-house designed Venturi Flowmeters, a breakthrough in cost-effective precision fluid measurement to support propulsion system feedback and control. Tailored specifically for rocketry applications, these flowmeters exemplify our dedication to self-reliance and technical advancement. Their innovative designs ensure accurate and reliable measurements of fluid flow, crucial for optimizing engine performance, while costing less than 10% of equivalent commercial options. Compact and efficient, the Venturi Flowmeters are pivotal tools in our mission to build larger and more powerful engines capable of reaching the upper atmosphere. 
     `.trim(),
