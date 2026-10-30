@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import ProjectSummary from "../components/ProjectSummary";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -17,15 +18,29 @@ export default function ProjectDetail() {
   return (
     <section className="page project-detail">
       <Link to="/projects">← Back to all projects</Link>
-      <img src={project.image} alt={project.title} />
-      <h1>{project.title}</h1>
-      <div className="categories">
-        {project.categories.map((c) => (
-          <span key={c} className="tag">{c}</span>
-        ))}
+      <div className="project-subteams">
+        <span className="project-subteams-label">Subteams:</span>
+        <div className="categories">
+          {project.categories.map((category) => (
+            <Link
+              key={category}
+              to={`/projects?category=${encodeURIComponent(category)}`}
+              className="tag category-link"
+            >
+              {category}
+            </Link>
+          ))}
+        </div>
       </div>
-      <p>{project.summary}</p>
-      {/* TODO: add the full write-up for this project here */}
+      <figure className="project-detail-image">
+        <img src={project.image} alt={project.title} />
+        {project.image_caption && <figcaption>{project.image_caption}</figcaption>}
+      </figure>
+      <h1>{project.title}</h1>
+      {project.status === "completed" && (
+        <div><span className="tag project-status-tag">Completed</span></div>
+      )}
+      <ProjectSummary summary={project.summary} />
     </section>
   );
 }

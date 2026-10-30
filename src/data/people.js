@@ -1,9 +1,11 @@
 // Add portrait files under public/images/People/Executives or /Alumni,
 export const executives = [
     { name: "Nathaniel Butler", description: "President", date: "2025", image: "" },
-    { name: "Mathew Debuen", description: "Propultion Lead", date: "2025", image: "" },
-    { name: "Adam Nguyen", description: "Mechanical Lead", date: "2025", image: "" },
+    { name: "Mathew Debuen", description: "Propultion Director", date: "2025", image: "" },
+    { name: "Jack Bradshaw", description: "Launch Canada Director", date: "2025", image: "" },
     { name: "Guneet Malhotra", description: "Avionics Lead", date: "2025", image: "" },
+    { name: "Adam Nguyen", description: "Mechanical Lead", date: "2025", image: "" },
+    { name: "Jakob Jones", description: "Chief Safety Officer", date: "2025", image: "Jakob+Jones.webp" },
 ];
 
 // Keep dated entries newest-first by the first year in date; undated entries go last.

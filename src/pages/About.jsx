@@ -162,6 +162,7 @@ export default function About() {
           emptyMessage="Alumni profiles will appear here. Add each person in the people data list."
         />
       </section>
+
     </div>
   );
 }
