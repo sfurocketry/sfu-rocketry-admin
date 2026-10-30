@@ -1,4 +1,6 @@
 export default function ProjectSummary({ summary, compact = false }) {
+  if (!summary) return null;
+
   const paragraphs = summary.split(/\n\n+/);
   const visibleParagraphs = compact ? paragraphs.slice(0, 1) : paragraphs;
 

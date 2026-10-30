@@ -3,20 +3,50 @@
 // file in there with the same name (see README in that folder).
 export const projects = [
   {
-    slug: "lre-gen4",
+    slug: "lre-gen6",
     status: "ongoing",
-    title: "LRE GEN4 | Experimental Cooling",
+    title: "LRE GEN6 | Experimental Cooling",
     categories: ["Propulsion"],
     cardDescription: "",
     summary: `
-      **LRE GEN4 is SFU Rocketry’s next step into a higher thrust class** — a 10 kN liquid bipropellant engine designed to evaluate non-traditional cooling methods. The goal is to explore simpler alternatives to regenerative cooling while still handling significantly higher thermal loads than previous engines.
+      **LRE GEN6 is SFU Rocketry’s next step into a higher thrust class** — a 15 kN liquid bipropellant engine designed to evaluate regen cooling methods.
 
-      GEN4 is fully instrumented, with sensors throughout the engine to capture pressure, temperature, and heat flux data. This allows us to directly validate thermal models and better understand how these alternative cooling strategies behave at scale.
+      GEN6 is fully instrumented, with sensors throughout the engine to capture pressure, temperature, and heat flux data. This allows us to directly validate thermal models and better understand how these alternative cooling strategies behave at scale.
 
-      As the largest engine we've built so far, GEN4 also helps us gain experience with new design challenges — higher flow rates, larger hardware, and more demanding structural loads — all of which feed into the long-term goal of developing a regeneratively cooled engine.
+      As the largest engine we've built so far, GEN6 also helps us gain experience with new design challenges — higher flow rates, larger hardware, and more demanding structural loads.
     `.trim(),
     image_caption: "",
-    image: `${import.meta.env.BASE_URL}images/projects/lre-gen4.jpg`,
+    image: `${import.meta.env.BASE_URL}images/projects/lre-gen6.jpg`,
+  },
+  {
+    slug: "lre-gen5",
+    status: "ongoing",
+    title: "LRE GEN5 | Experimental Cooling",
+    categories: ["Propulsion"],
+    cardDescription: "",
+    summary: `
+      **LRE GEN5 is SFU Rocketry’s next step into a higher thrust class** — a 5 kN liquid bipropellant engine designed to evaluate regen cooling methods.
+
+      GEN5 is fully instrumented, with sensors throughout the engine to capture pressure, temperature, and heat flux data. This allows us to directly validate thermal models and better understand how these alternative cooling strategies behave at scale.
+
+      As the largest engine we've built so far, GEN5 also helps us gain experience with new design challenges — higher flow rates, larger hardware, and more demanding structural loads.
+    `.trim(),
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/lre-gen5.png`,
+  },
+  {
+    slug: "lre-gen4",
+    status: "completed",
+    title: "LRE GEN4 | Experimental Cooling",
+    categories: ["Propulsion"],
+    cardDescription: "LRE GEN 4 integrates experimental film cooling and a new injector geometry into a 3kN rocket engine.",
+    summary: `
+      LRE GEN 4 builds on the success of GEN 3, reusing the same chamber and fuel system. GEN 4 incorporates **film cooling** and a more advanced impinging injector geometry. 
+      
+      Impinging injectors create better atomisation of propellant but are harder to design correctly.
+    `.trim(),
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/lre-gen4.png`,
   },
   {
     slug: "lre-gen3",
@@ -38,7 +68,7 @@ export const projects = [
   },
   {
     slug: "silencer",
-    status: "ongoing",
+    status: "completed",
     title: "Engine Acoustics Silencer",
     categories: ["Mechanical", "Propulsion"],
     cardDescription: "",
@@ -48,29 +78,11 @@ export const projects = [
       The design centers around a large cylindrical enclosure equipped with high-flow water nozzles that spray directly into the engine plume. The water rapidly cools and disrupts the supersonic exhaust jet, breaking up shock structures and dramatically reducing broadband noise. The cylindrical housing helps further contain and dampen the remaining sound energy.
     `.trim(),
     image_caption: "",
-    image: `${import.meta.env.BASE_URL}images/projects/silencer.jpg`,
-  },
-  {
-    slug: "etc",
-    status: "ongoing",
-    title: "Engine Test Cell",
-    categories: ["Mechanical", "Propulsion"],
-    cardDescription: "",
-    summary:`
-      **SFU Rocketry is building a new permanent engine test system - the Engine Test Cell (ETC)**. Designed around a reinforced 20-foot shipping container, ETC integrates all key systems required for static fire testing: high-capacity propellant tanks, nitrogen pressurization, advanced instrumentation, structural engine mounting, remote actuation hardware, and real-time data acquisition.
-
-      The entire system is self-contained and fully transportable, allowing us to conduct hot-fire tests at multiple approved sites. This mobility gives us the flexibility to adapt to regulatory and logistical constraints, while ensuring consistent safety standards and operational procedures at each location.
-
-      By consolidating setup into a permanent, ready-to-fire unit, we can significantly reduce setup and teardown time during test campaigns - reducing 3-day setups to 3 hours. ETC also supports longer burns thanks to expanded tank volumes and is structurally rated for engines up to at least 50 kN of thrust.
-
-      With built-in diagnostics and instrumentation, it provides live feedback on pressure, temperature, thrust, and valve timing, enabling detailed post-test analysis and iterative improvements across engine programs. The system is also being designed with safety and repeatability in mind, incorporating standard isolation protocols, remote control operation, and compatibility with high-thrust load cells and flame trench systems. 
-    `.trim(),
-    image_caption: "",
-    image: `${import.meta.env.BASE_URL}images/projects/etc.jpg`,
+    image: `${import.meta.env.BASE_URL}images/projects/silencer.png`,
   },
   {
     slug: "lace-1",
-    status: "ongoing",
+    status: "completed",
     title: "LACE-1 | ISG Propulsion R&D",
     categories: ["Propulsion", "Innovative Solutions Group"],
     cardDescription: "",
@@ -82,11 +94,11 @@ export const projects = [
       LACE represents a major step toward high-performance, flight-ready propulsion systems — and serves as a proving ground for advanced cooling designs that will carry over into future mission-class engines.
     `.trim(),
     image_caption: "",
-    image: `${import.meta.env.BASE_URL}images/projects/lace-1.jpg`,
+    image: `${import.meta.env.BASE_URL}images/projects/lace-1.png`,
   },
   {
     slug: "ablatives",
-    status: "ongoing",
+    status: "completed",
     title: "Ablatives | ISG Materials R&D",
     categories: ["Mechanical", "Innovative Solutions Group"],
     cardDescription: "",
@@ -110,7 +122,7 @@ export const projects = [
   },
   {
     slug: "cryo",
-    status: "ongoing",
+    status: "completed",
     title: "CRYO | ISG Sensors R&D",
     categories: ["Mechanical", "Hardware", "Software", "Innovative Solutions Group"],
     cardDescription: "",
@@ -122,7 +134,7 @@ export const projects = [
   },
   {
     slug: "venturi",
-    status: "ongoing",
+    status: "completed",
     title: "Venturi Flowmeters | ISG Sensors R&D",
     categories: ["Propulsion", "Mechanical", "Innovative Solutions Group"],
     cardDescription: "",
@@ -131,5 +143,115 @@ export const projects = [
     `.trim(),
     image_caption: "",
     image: `${import.meta.env.BASE_URL}images/projects/venturi.jpg`,
+  },
+  {
+    slug: "ecs-2",
+    status: "completed",
+    title: "ECS-2 | Engine Control System",
+    categories: [],
+    cardDescription: "The second generation of our ECS - electronics, firmware, and software that controls the safe and successful ignition and firing of a Propulsion System.",
+    summary: "The second generation of our ECS - electronics, firmware, and software that controls the safe and successful ignition and firing of a Propulsion System.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/ecs-2.jpg`,
+  },
+  {
+    slug: "lre-gen2",
+    status: "completed",
+    title: "LRE GEN2 | Ablatives Engine",
+    categories: ["Propulsion"],
+    cardDescription: "A 3kN liquid rocket engine made from wood composite ablative material - a leap towards sustainable rocket propulsion.",
+    summary: "A 3kN liquid rocket engine made from wood composite ablative material - a leap towards sustainable rocket propulsion.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/lre-gen2.jpg`,
+  },
+  {
+    slug: "tvc",
+    status: "completed",
+    title: "Thrust Vector Control",
+    categories: ["Mechanical", "Hardware", "Software"],
+    cardDescription: "Thrust Vector Control uses advanced feedback control loops and robust actuators to steer our engines via the manipulation of the direction of thrust.",
+    summary: "Thrust Vector Control uses advanced feedback control loops and robust actuators to steer our engines via the manipulation of the direction of thrust.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/tvc.png`,
+  },
+  {
+    slug: "obc-1",
+    status: "completed",
+    title: "OBC-1 | High Altitude Payload",
+    categories: ["Hardware", "Software", "Mechanical"],
+    cardDescription: "The first-generation flight computer and RF payload, sent to 27km in altitude and retrieved 250km from the launch site.",
+    summary: "The first-generation flight computer and RF payload, sent to 27km in altitude and retrieved 250km from the launch site.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/obc-1.jpg`,
+  },
+  {
+    slug: "lre-gen1",
+    status: "completed",
+    title: "LRE GEN1 | Liquid Rocket Engine",
+    categories: ["Propulsion"],
+    cardDescription: "SFU Rocketry’s first Liquid Rocket Engine - a 3kN heatsink engine with supporting fluids systems.",
+    summary: "SFU Rocketry’s first Liquid Rocket Engine - a 3kN heatsink engine with supporting fluids systems.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/lre-gen1.jpg`,
+  },
+  {
+    slug: "spark-igniter",
+    status: "completed",
+    title: "Augmented Spark Igniter",
+    categories: ["Propulsion"],
+    cardDescription: "The small rocket engine that ignites the big rocket engine.",
+    summary: "The small rocket engine that ignites the big rocket engine.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/spark-igniter.jpg`,
+  },
+  {
+    slug: "test-stand",
+    status: "completed",
+    title: "Test Stand Structure",
+    categories: ["Mechanical"],
+    cardDescription: "The structural system that safely supports rocket engines and fluids systems, while bracing against large forces.",
+    summary: "The structural system that safely supports rocket engines and fluids systems, while bracing against large forces.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/test-stand.jpg`,
+  },
+  {
+    slug: "ecs-1",
+    status: "completed",
+    title: "ECS-1 | Engine Control System",
+    categories: ["Hardware", "Software"],
+    cardDescription: "The electronics, firmware, and software that controls the safe and successful ignition and firing of a Propulsion System.",
+    summary: "The electronics, firmware, and software that controls the safe and successful ignition and firing of a Propulsion System.",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/ecs-1.jpg`,
+  },
+  {
+    slug: "cots-rocket",
+    status: "completed",
+    title: "10km COTS High Power Rocket",
+    categories: ["Mechanical", "Propulsion"],
+    cardDescription: "",
+    summary: "",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/cots-rocket.jpg`,
+  },
+  {
+    slug: "cots-rocket-avionics",
+    status: "completed",
+    title: "10km COTS Rocket Avionics System",
+    categories: ["Hardware", "Software"],
+    cardDescription: "",
+    summary: "",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/cots-rocket-avionics.png`,
+  },
+  {
+    slug: "hybrid-engine",
+    status: "completed",
+    title: "Hybrid Rocket Engine",
+    categories: ["Propulsion"],
+    cardDescription: "",
+    summary: "",
+    image_caption: "",
+    image: `${import.meta.env.BASE_URL}images/projects/hybrid-engine.png`,
   },
 ];

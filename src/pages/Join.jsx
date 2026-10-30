@@ -20,7 +20,7 @@ export default function Join() {
             <div><h3>Control Systems Engineering</h3><p>Develop flight control algorithms, sensor fusion, embedded systems, and simulation tools for rocket stabilization and guidance.</p></div>
           </article>
           <article>
-            <img src={`${import.meta.env.BASE_URL}images/projects/lre-gen4.jpg`} alt="Propulsion and mechanical engineering project" />
+            <img src={`${import.meta.env.BASE_URL}images/projects/lre-gen4.png`} alt="Propulsion and mechanical engineering project" />
             <div><h3>Propulsion &amp; Mechanical Engineering</h3><p>Design and test engines, fluid systems, cooling methods, structures, and the hardware that turns a concept into a working machine.</p></div>
           </article>
           <article>

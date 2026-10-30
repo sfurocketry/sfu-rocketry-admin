@@ -5,6 +5,7 @@ import { sponsors } from "../data/sponsors";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
+  const activeProjects = projects.filter((project) => project.status === "ongoing");
   const projectTrackRef = useRef(null);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(true);
@@ -92,7 +93,7 @@ export default function Home() {
           </div>
         </div>
         <div className="project-grid home-project-grid" ref={projectTrackRef}>
-          {projects.map((p) => (
+          {activeProjects.map((p) => (
             <ProjectCard key={p.slug} project={p} />
           ))}
         </div>
