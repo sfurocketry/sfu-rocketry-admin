@@ -6,7 +6,7 @@ export default function Join() {
         <div className="join-hero-content page-hero-content">
           <p className="eyebrow">Join SFU Rocketry</p>
           <h1>Help Build the Future of Space Travel</h1>
-          <p>Recruiting start of 2027!.</p>
+          <p>Recruiting start of 2027!</p>
           <a href="/contact" className="btn">Apply Here</a>
         </div>
       </section>
